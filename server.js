@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 var port = 8881;
+var me = '';
 
 
 //----------------------------------
@@ -38,3 +39,5 @@ require('./App/routes.js')(app)
 app.listen(port, function(){
 	console.log('app = ready', port);
 })
+
+
